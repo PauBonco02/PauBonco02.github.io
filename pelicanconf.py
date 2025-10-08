@@ -2,6 +2,10 @@ AUTHOR = 'Pau Boncompte'
 SITENAME = 'Pau Boncompte'
 SITETITLE = 'Pau Boncompte'
 SITEURL = "http://localhost:8000"
+
+SITEURL = "https://PauBonco02.github.io"
+RELATIVE_URLS = False
+
 SITELOGO = "/images/profileimage.JPG"
 FAVICON = "/images/favicon.ico"
 BROWSER_COLOR = "#333333"
@@ -10,7 +14,7 @@ PYGMENTS_STYLE = "monokai"
 PATH = "content"
 TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'en'
-THEME = "themes/Flex"
+THEME = "themes/Flex-master"
 LOAD_CONTENT_CACHE = False
 
 DISABLE_URL_HASH = True

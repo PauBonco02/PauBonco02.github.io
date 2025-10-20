@@ -2,6 +2,7 @@ AUTHOR = 'Pau Boncompte'
 SITENAME = 'Pau Boncompte'
 SITETITLE = 'Pau Boncompte'
 
+'''
 # For development
 SITEURL = "http://localhost:8000"
 RELATIVE_URLS = True
@@ -10,7 +11,7 @@ RELATIVE_URLS = True
 # For production
 SITEURL = "https://PauBonco02.github.io"
 RELATIVE_URLS = False
-'''
+
 
 SITELOGO = "/images/profileimage.JPG"
 FAVICON = "/images/favicon.ico"

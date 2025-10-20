@@ -9,20 +9,12 @@ Here is a collection of my artwork. Click on any image to zoom it and see more d
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css">
 
 <div class="gallery" id="my-gallery">
-    <a href="/images/gallery/art-collection/im03.gif"
-       data-pswp-width="1080"
-       data-pswp-height="1080"
-       data-caption-title="Im03"
-       data-caption-desc="">
-        <img src="/images/gallery/art-collection/im03.gif" alt="Im03" />
-    </a>
-    
-    <a href="/images/gallery/art-collection/im02_2bit.png"
-       data-pswp-width="390"
-       data-pswp-height="492"
-       data-caption-title="Im02 2Bit"
-       data-caption-desc="">
-        <img src="/images/gallery/art-collection/im02_2bit.png" alt="Im02 2Bit" />
+    <a href="/images/gallery/art-collection/im02.png"
+       data-pswp-width="1600"
+       data-pswp-height="1440"
+       data-caption-title="Resurgence"
+       data-caption-desc="This is my first attempt at creating pixelart using Aseprite.">
+        <img src="/images/gallery/art-collection/im02.png" alt="Resurgence" />
     </a>
     
     <a href="/images/gallery/art-collection/im01.png"

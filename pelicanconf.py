@@ -1,10 +1,16 @@
 AUTHOR = 'Pau Boncompte'
 SITENAME = 'Pau Boncompte'
 SITETITLE = 'Pau Boncompte'
-SITEURL = "http://localhost:8000"
 
+# For development
+SITEURL = "http://localhost:8000"
+RELATIVE_URLS = True
+'''
+
+# For production
 SITEURL = "https://PauBonco02.github.io"
 RELATIVE_URLS = False
+'''
 
 SITELOGO = "/images/profileimage.JPG"
 FAVICON = "/images/favicon.ico"
@@ -18,9 +24,6 @@ THEME = "themes/Flex-master"
 LOAD_CONTENT_CACHE = False
 
 DISABLE_URL_HASH = True
-
-
-# Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
@@ -40,6 +43,8 @@ SOCIAL = (
 
 STATIC_PATHS = ['images', 'static','extra/custom.css']
 
+USE_LESS = True
+
 EXTRA_PATH_METADATA = {
     "extra/custom.css": {"path": "static/custom.css"},
 }
@@ -50,9 +55,6 @@ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = False
 THEME_COLOR_ENABLE_USER_OVERRIDE = False
 
 DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
 
 # Plugin settings
 PLUGIN_PATHS = ['plugins']

@@ -13,27 +13,37 @@
     {{ page.content }}
   </div>
   
-  <!-- Automatically list all articles from 'projects' category -->
-  {% for article in articles %}
+  {% for article in articles | sort(attribute='title', reverse=False) %}
     {% if article.category.name == 'projects' %}
-    <header style="margin-top: 30px;">
-      <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-      <p>
-        Posted on {{ article.locale_date }}
-        {% if article.tags %}
-            &#8226; Tagged with
-            {% for tag in article.tags %}
-                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
-            {% endfor %}
-        {% endif %}
-      </p>
-    </header>
-    <div>
-        {% if article.summary %}
-        {{ article.summary }}
-        {% endif %}
-          <br>
-          <a class="btn" href="{{ SITEURL }}/{{ article.url }}">Continue reading</a>
+    <div style="margin-top: 30px; padding-bottom: 30px; border-bottom: 1px solid #ddd; display: flex; gap: 20px;">
+      {% if article.cover %}
+      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 10px;">
+        <a href="{{ SITEURL }}/{{ article.url }}">
+          <img src="{{ SITEURL }}/{{ article.cover }}" alt="{{ article.title }}" style="width: 200px; height: 200px; object-fit: cover;">
+        </a>
+        <a class="btn" href="{{ SITEURL }}/{{ article.url }}" style="text-align: center;">Continue reading</a>
+      </div>
+      {% endif %}
+      
+      <div style="flex: 1;">
+        <header>
+          <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+          <p>
+            <!--Posted on {{ article.locale_date }} -->
+            {% if article.tags %}
+                &#8226; Tagged with
+                {% for tag in article.tags %}
+                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+                {% endfor %}
+            {% endif %}
+          </p>
+        </header>
+        <div>
+            {% if article.summary %}
+            {{ article.summary }}
+            {% endif %}
+        </div>
+      </div>
     </div>
     {% endif %}
   {% endfor %}

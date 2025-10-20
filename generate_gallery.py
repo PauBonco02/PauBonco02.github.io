@@ -42,6 +42,15 @@ for img in images:
     
     # Check if there's a caption file
     caption_file = img.with_suffix('.txt')
+
+    # DEBUG: Print what we're looking for
+    print(f"Image: {img.name}")
+    print(f"Looking for caption: {caption_file.name}")
+    print(f"Caption exists: {caption_file.exists()}")
+    if caption_file.exists():
+        print(f"Caption content: {caption_file.read_text(encoding='utf-8')[:50]}...")
+    print("---")
+
     title = ""
     description = ""
     

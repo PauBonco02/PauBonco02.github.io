@@ -42,15 +42,6 @@ for img in images:
     
     # Check if there's a caption file
     caption_file = img.with_suffix('.txt')
-
-    # DEBUG: Print what we're looking for
-    print(f"Image: {img.name}")
-    print(f"Looking for caption: {caption_file.name}")
-    print(f"Caption exists: {caption_file.exists()}")
-    if caption_file.exists():
-        print(f"Caption content: {caption_file.read_text(encoding='utf-8')[:50]}...")
-    print("---")
-
     title = ""
     description = ""
     
@@ -88,19 +79,28 @@ const lightbox = new PhotoSwipeLightbox({
   children: 'a',
   pswpModule: () => import('https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.esm.min.js'),
                   
-  // Add padding at the bottom for the caption
+  // Adjust padding for caption
   paddingFn: (viewportSize) => {
+    const isMobile = window.innerWidth <= 768;
+    const isPortrait = window.innerHeight > window.innerWidth;
+    const captionPercent = (isMobile && isPortrait) ? 0.40 : 0.35;
+    
     return {
       top: 10,
-      bottom: 100,  // Reserve space for caption (adjust as needed)
+      bottom: Math.floor(viewportSize.y * captionPercent),
       left: 10,
       right: 10
-    }
+    };
   },
-                  
-  // Limit maximum zoom
-  maxZoomLevel: 2.5,  // Adjust this value (default is 4)
-  initialZoomLevel: 'fit'  // Start with fit-to-screen
+  
+  initialZoomLevel: 'fit',
+  secondaryZoomLevel: 1.5,
+  maxZoomLevel: 2.5,
+  
+  pinchToClose: true,
+  closeOnVerticalDrag: true,
+  
+  bgOpacity: 0.9
 });
 
 // Add caption
@@ -118,12 +118,8 @@ lightbox.on('uiRegister', function() {
           const desc = currSlideElement.getAttribute('data-caption-desc') || '';
           
           let html = '';
-          if (title) {
-            html = '<div class="caption-title">' + title + '</div>';
-          }
-          if (desc) {
-            html += '<div class="caption-desc">' + desc + '</div>';
-          }
+          if (title) html = '<div class="caption-title">' + title + '</div>';
+          if (desc) html += '<div class="caption-desc">' + desc + '</div>';
           
           el.innerHTML = html;
         }
@@ -133,6 +129,29 @@ lightbox.on('uiRegister', function() {
 });
 
 lightbox.init();
+
+// Simple pan reset for mobile centering
+lightbox.on('change', () => {
+  if (window.innerWidth <= 768) {
+    setTimeout(() => {
+      const slide = lightbox.pswp.currSlide;
+      if (slide && slide.content) {
+        slide.content.pan.x = 0;
+        slide.content.pan.y = 0;
+        slide.content.applyCurrentZoomPan();
+      }
+    }, 50);
+  }
+});
+
+// Allow scrolling in caption
+lightbox.on('bindEvents', () => {
+  const caption = document.querySelector('.pswp__custom-caption');
+  if (caption) {
+    caption.addEventListener('wheel', (e) => e.stopPropagation(), { passive: true });
+    caption.addEventListener('touchmove', (e) => e.stopPropagation(), { passive: true });
+  }
+});
 </script>
 
 <style>
@@ -146,8 +165,44 @@ lightbox.init();
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-  max-height: 30%;
+  max-height: 35%;
   overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .pswp__custom-caption {
+    max-height: 40%;
+    padding: 15px 20px;
+    font-size: 0.9em;
+  }
+  
+  .pswp__custom-caption .caption-title {
+    font-size: 1.2em !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .pswp__custom-caption .caption-desc {
+    font-size: 0.95em !important;
+    line-height: 1.4 !important;
+  }
+}
+
+.pswp__custom-caption::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pswp__custom-caption::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.pswp__custom-caption::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
 }
 
 .pswp__custom-caption .caption-title {

@@ -1,2 +1,8 @@
 1-bit dead end
-I did this with a friend of mine for a Neuroscience Project back in Barcelona.
+I did this piece with a friend of mine for a neuroscience project back at UPF University in Barcelona. We were studying the visual system and how artists took advantage of certain mechanisms in the brain to create effects in their artwork, such as depth or dynamism.
+
+Our idea was to use the most minimalist form of pixel art: 1-bit art. And I say minimalist rather than simple because working with such a strict limitation — only two possible colors — made it surprisingly challenging to create a scene with recognizable objects. In fact, this kind of art depends entirely on the brain’s ability to interpret visual contrast and fill in missing information.
+
+In this piece, every element is built only from black and white pixels. Yet, thanks to how our visual system processes edges, perspective, and light, the brain reconstructs a three-dimensional space from almost nothing. The alternating density of dots mimics shading, the converging lines suggest depth, and the sharp contrasts define shapes. Our perception completes the rest, inventing light sources, textures, and even atmosphere.
+
+What looks like a simple pattern of pixels is, in reality, a small demonstration of how vision is not just about seeing — it’s about interpreting.

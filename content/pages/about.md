@@ -1,4 +1,4 @@
-Title: About Me
+Title: About
 Slug: about
 Author: Pau Boncompte
 Summary: Learn more about me

@@ -15,9 +15,9 @@
   
   {% for article in articles | sort(attribute='title', reverse=False) %}
     {% if article.category.name == 'projects' %}
-    <div style="margin-top: 30px; padding-bottom: 30px; border-bottom: 1px solid #ddd; display: flex; gap: 20px;">
+    <div class="project-entry">
       {% if article.cover %}
-      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 10px;">
+      <div class="project-image-container">
         <a href="{{ SITEURL }}/{{ article.url }}">
           <img src="{{ SITEURL }}/{{ article.cover }}" alt="{{ article.title }}" style="width: 200px; height: 200px; object-fit: cover;">
         </a>
@@ -25,7 +25,7 @@
       </div>
       {% endif %}
       
-      <div style="flex: 1;">
+      <div class="project-content">
         <header>
           <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
           <p>
@@ -42,6 +42,10 @@
             {% if article.summary %}
             {{ article.summary }}
             {% endif %}
+        </div>
+        <!-- Mobile-only Continue reading button -->
+        <div class="mobile-continue-btn">
+          <a class="btn" href="{{ SITEURL }}/{{ article.url }}">Continue reading</a>
         </div>
       </div>
     </div>

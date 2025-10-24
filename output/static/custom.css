@@ -33,7 +33,7 @@ article a:hover,
 #main-nav a:visited,
 .main-nav a:visited,
 .header nav a:visited {
-    color: var(--accent-color) !important; /* Same color even after visiting */
+    color: var(--accent-color) !important;
 }
 
 #main-nav a:hover,
@@ -67,7 +67,6 @@ a.btn:hover {
 
 
 /* --- REMOVE TOP NAVIGATION BAR --- */
-
 main nav {
     display: none !important;
 }
@@ -76,31 +75,27 @@ main nav {
 main,
 .main-content,
 article {
-    padding-top: 20px !important; /* Adjust this value - increase for more space */
+    padding-top: 20px !important;
 }
 
-/* Make sure body doesn't have extra padding */
 body {
     padding-top: 0 !important;
 }
 
-
-/* --- YOUR NEW STYLES --- */
-/* 1. Main page background color */
+/* Main page background color */
 body {
-    background-color: #ffffff; /* A light grey. Change to any color you like! */
+    background-color: #ffffff;
 }
 
 
 /* Navigation sidebar background color */
 aside,hr {
-    background-color: #393939; /* A new background color for the sidebar */
-    /* background-color: #647fbc; */
+    background-color: #393939;
 }
 
 aside,
 .sidebar {
-    padding-top: 20px !important; /* Adjust this value to move more or less */
+    padding-top: 20px !important;
 }
 
 aside img,
@@ -224,10 +219,10 @@ article,
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* Images in the gallery - MORE SQUARE (SHORTER) */
+/* Images in the gallery*/
 #my-gallery img {
     width: 100% !important;
-    height: 260px !important; /* Reduced from 320px to 260px for more square look */
+    height: 260px !important;
     object-fit: contain !important;
     display: block !important;
     background: #f8f8f8 !important;
@@ -298,7 +293,7 @@ article,
     left: 0 !important;
     right: 0 !important;
     margin: 0 !important;
-    padding: 20px 5% 30px 5% !important; /* Use percentage for responsive padding */
+    padding: 20px 5% 30px 5% !important;
     text-align: center !important;
     box-sizing: border-box !important;
     float: none !important;
@@ -358,11 +353,11 @@ article,
     margin: 0 8px !important;
   }
   
-  /* Main content - use percentage padding for responsive margins */
+  /* Main content */
   main {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 30px 6% !important; /* 6% padding on sides */
+    padding: 30px 6% !important;
     margin: 0 !important;
     box-sizing: border-box !important;
   }
@@ -415,48 +410,68 @@ article,
   
   /* More compact sidebar with responsive padding */
   aside {
-    padding: 15px 4% 25px 4% !important; /* 4% padding on mobile */
+    padding: 10px 4% 15px 4% !important;
   }
   
   /* Smaller profile image on mobile */
   aside img,
   .sidebar img {
-    width: 150px !important;
-    height: 150px !important;
-    border-width: 3px !important;
-    margin-bottom: 8px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-width: 2px !important;
+    margin-bottom: 5px !important;
   }
   
   /* Smaller title text */
   aside h1,
   aside h1 a {
-    font-size: 1.4em !important;
-    margin: 5px auto 12px auto !important;
+    font-size: 1.2em !important;
+    margin: 3px auto 8px auto !important;
   }
   
-  /* Compact navigation */
-  aside nav,
+  /* Compact navigation container - centered */
+  aside nav {
+    margin: 8px auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 200px !important; /* Constrain width */
+    text-align: center !important;
+  }
+  
+  /* Navigation list - 2 COLUMN GRID */
   aside nav ul {
-    margin: 8px 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    list-style: none !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0 !important;
+    width: 100% !important;
   }
   
-  /* Stack navigation vertically on small screens */
+  /* Navigation links as grid items */
   aside nav ul li {
     display: block !important;
-    margin: 5px 0 !important;
+    margin: 0 !important;
+    padding: 3px 10px !important;
+    text-align: center !important;
+    font-size: 0.95em !important;
   }
   
-  /* Compact social icons */
+  aside nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  /* MORE SPACE between navigation grid and social icons */
   aside .social,
   aside ul.social {
-    margin: 8px 0 0 0 !important;
+    margin: 15px 0 0 0 !important;
   }
   
-  /* Better content padding on mobile */
-  main {
-    padding: 25px 5% !important; /* 5% on mobile */
+  aside .social li {
+    margin: 0 5px !important;
   }
-  
+
   /* Gallery to two columns on mobile */
   #my-gallery {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -468,111 +483,148 @@ article,
     height: 180px !important;
     object-fit: cover !important;
   }
-  
-  /* Make all images responsive */
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-  
-  /* Don't let images break the layout */
-  article img,
-  .page img {
-    width: 100% !important;
-    height: auto !important;
-  }
+
 }
 
-/* Very small phones */
-@media (max-width: 480px) {
-  
-  aside {
-    padding: 12px 3% 20px 3% !important; /* 3% on very small screens */
+/* ========================================= */
+/* PHOTOSWIPE CONFIGURATION VARIABLES */
+/* ========================================= */
+
+:root {
+  --caption-height-desktop: 35%;
+  --caption-height-mobile-landscape: 35%;
+  --caption-height-mobile-portrait: 40%;
+}
+
+/* Caption container */
+.pswp__custom-caption {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: var(--caption-height-desktop);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .pswp__custom-caption {
+    padding: 15px 20px;
+    font-size: 0.9em;
+    max-height: var(--caption-height-mobile-portrait);
   }
   
-  aside img,
-  .sidebar img {
-    width: 120px !important;
-    height: 120px !important;
-    margin-bottom: 6px !important;
-  }
-  
-  aside h1,
-  aside h1 a {
+  .pswp__custom-caption .caption-title {
     font-size: 1.2em !important;
-    margin: 4px auto 10px auto !important;
+    margin-bottom: 8px !important;
   }
   
-  main {
-    padding: 20px 4% !important; /* 4% padding */
-  }
-  
-  #my-gallery {
-    padding: 8px !important;
-    gap: 10px !important;
+  .pswp__custom-caption .caption-desc {
+    font-size: 0.95em !important;
+    line-height: 1.4 !important;
   }
 }
 
-/* Landscape mode on phones */
 @media (max-width: 900px) and (orientation: landscape) {
-  
-  /* Very compact sidebar for landscape */
-  aside {
-    padding: 8px 3% 15px 3% !important;
-  }
-  
-  aside img,
-  .sidebar img {
-    width: 80px !important;
-    height: 80px !important;
-    margin-bottom: 5px !important;
-  }
-  
-  aside h1 {
-    font-size: 1.1em !important;
-    margin: 3px 0 8px 0 !important;
-  }
-  
-  aside nav,
-  aside nav ul {
-    margin: 5px 0 !important;
-  }
-  
-  /* Make navigation horizontal and compact */
-  aside nav ul li {
-    display: inline-block !important;
-    margin: 0 8px 3px 8px !important;
-    font-size: 0.9em !important;
-  }
-  
-  aside .social,
-  aside ul.social {
-    margin: 5px 0 0 0 !important;
-  }
-  
-  aside .social li {
-    margin: 0 5px !important;
+  .pswp__custom-caption {
+    max-height: var(--caption-height-mobile-landscape);
   }
 }
 
+.pswp__custom-caption::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pswp__custom-caption::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.pswp__custom-caption::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.pswp__custom-caption::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.pswp__custom-caption .caption-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pswp__custom-caption .caption-desc {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
 /* ========================================= */
-/* PHOTOSWIPE: SCALE IMAGES TO FIT SCREEN */
+/* PHOTOSWIPE: BASIC SETUP */
 /* ========================================= */
 
-/* Make PhotoSwipe images fit within mobile screens */
-@media (max-width: 1024px) {
-    
-    .pswp__img {
-        max-width: 100vw !important;
-        max-height: 100vh !important;
-        width: auto !important;
-        height: auto !important;
-        object-fit: contain !important;
-    }
-    
-    .pswp__zoom-wrap {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
+/* Pixel art rendering */
+.pswp img {
+  image-rendering: pixelated !important;
+  image-rendering: -moz-crisp-edges !important;
+  image-rendering: crisp-edges !important;
+}
+
+
+/* ========================================= */
+/* PROJECT PAGE STYLES */
+/* ========================================= */
+
+.project-entry {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 20px;
+}
+
+.project-image-container {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-content {
+  flex: 1;
+}
+
+/* Hide mobile continue button on desktop */
+.mobile-continue-btn {
+  display: none;
+  margin-top: 15px;
+}
+
+/* Mobile: Hide images and adjust layout */
+@media (max-width: 768px) {
+  
+  /* Hide the image container completely on mobile */
+  .project-image-container {
+    display: none !important;
+  }
+  
+  /* Make content full width */
+  .project-entry {
+    display: block !important;
+  }
+  
+  /* Show the mobile continue button */
+  .mobile-continue-btn {
+    display: block;
+  }
 }

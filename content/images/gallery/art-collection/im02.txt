@@ -1,2 +1,4 @@
 Resurgence
-This is my first attempt at creating pixelart using Aseprite.
+This is my first attempt at creating pixelart with Aseprite. The color palette I used is Bubblegum, consisting of 16 colors, out of which I used 9. I wanted to experiment with new features like the gradient tool, and that is why I made the background a sunset. Also, I found this sort of reversed light source to be a fun challenge to improve my pixel art skills.
+
+Seeing the animation feature also present in Aseprite, I would also love to turn this into an animated piece in the near future.

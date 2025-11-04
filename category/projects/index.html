@@ -10,7 +10,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://PauBonco02.github.io/theme/stylesheet/style.min.css">
+    <link rel="stylesheet/less" type="text/css" href="https://PauBonco02.github.io/theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
 
 
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
@@ -57,7 +58,7 @@
   <meta property="og:url" content="https://PauBonco02.github.io"/>
   <meta property="og:image" content="/images/profileimage.JPG">
 
-  <title>Pau Boncompte &ndash; Tag EMG</title>
+  <title>Pau Boncompte &ndash; Category projects</title>
 
 
 </head>
@@ -81,25 +82,25 @@
 
             <li>
               <a target="_self"
-                 href="https://PauBonco02.github.io/pages/about.html">
-                About Me
+                 href="https://PauBonco02.github.io/about">
+                About
               </a>
             </li>
             <li>
               <a target="_self"
-                 href="https://PauBonco02.github.io/pages/projects.html">
+                 href="https://PauBonco02.github.io/projects">
                 Projects
               </a>
             </li>
             <li>
               <a target="_self"
-                 href="https://PauBonco02.github.io/pages/art.html">
+                 href="https://PauBonco02.github.io/art">
                 Art
               </a>
             </li>
             <li>
               <a target="_self"
-                 href="https://PauBonco02.github.io/pages/contact.html">
+                 href="https://PauBonco02.github.io/contact">
                 Contact
               </a>
             </li>
@@ -149,32 +150,60 @@ rel="me"           href="mailto:pauboncompte02@gmail.com"
 
 </nav>
 
-
-
 <article>
-  <header>
-    <h2><a href="https://PauBonco02.github.io/emg-quest.html">EMG Quest: a EMG-controlled Coop Game</a></h2>
-    <p>
-      Posted on Wed 01 May 2024 in <a href="https://PauBonco02.github.io/category/projects.html">projects</a>
+  
+  <!-- Quote & Personal Context Section -->
+  <section class="homepage-intro">
+    <div class="hero-image">
+      <picture>
+        <source srcset="/images/hero-mobile.jpg" media="(max-width: 699px)">
+        <source srcset="/images/hero-desktop.jpg" media="(min-width: 700px)">
+        <img src="/images/hero-image.jpg" alt="Hero Image">
+    </div>
+    
+    <div class="quote-section">
+      <blockquote>
+        "What is more important for us, at an elemental level, than the control, the owning and operation, of our own physical selves? And yet it is so automatic, so familiar, we never give it a thought."
+        <footer>— Oliver Sacks</footer>
+      </blockquote>
+      
+      <div class="personal-note">
+        <p>
+          I still remember when I first read <em>The Man Who Mistook His Wife for a Hat</em>, by Oliver Sacks. It truly sparked my fascination with neuroscience.
+          His writings go far beyond clinical observation; they are profound explorations of perception and human identity. In one story, a patient who lost 
+          her sense of proprioception leads Sacks to meditate on the deep interdependence of mind and body. In another, an elderly woman with Tourette’s syndrome chooses 
+          to live without medication, since the same dopaminergic activity that caused her tics also made her lively, expressive, and happy. Through such cases, Sacks 
+          reflects on the delicate balance between neurological disorder and personal identity, becoming a pioneer in recognizing patient value — understanding that the goal 
+          of medicine extends beyond symptom control to the preservation of individuality and the meaning of one’s life.
+        </p>
 
-          &#8226; Tagged with
-              <a href="https://PauBonco02.github.io/tag/unity.html">Unity</a>,              <a href="https://PauBonco02.github.io/tag/emg.html">EMG</a>
-    </p>
-  </header>
-  <div>
-      <div><p>This is a summary</p></div>
-        <br>
-        <a class="btn"
-           href="https://PauBonco02.github.io/emg-quest.html">
-          Continue reading
-        </a>
-  </div>
+        <p>
+          This book made me decide to pursue Biomedical Engineering, since while I've always enjoyed maths and physics, I also wanted to help people in a direct and meaningful way,
+          putting human well-being at the center of my work. I thought that a small tribute to such an inspiring author would be a fitting way to introduce my personal website.
+        </p>
+      </div>
+
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      
+      <div class="project-card">
+        <h3><a href="/projects/bci-walk">EEG-Based BCI for Locomotion Intention Decoding</a></h3>
+        <p>An EEG-Based Brain-Computer Interface for walking and turning intention decoding in a VR environment.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="/projects/emg-quest">EMG Quest: a EMG-controlled Coop Game</a></h3>
+        <p>A cooperative platformer controlled entirely by muscle signals. Two players use EMG sensors on their forearms to move their sprites through levels requiring teamwork and coordination.</p>
+      </div>
+
+    </div>
+  </section>
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
 
 <footer>
 <p>&copy;  </p>

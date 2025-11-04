@@ -138,6 +138,11 @@ aside .site-name a:hover,
     color: #ffffff !important;
 }
 
+/* Justify all article text */
+article p {
+    text-align: justify;
+}
+
 /* --- SIDEBAR NAVIGATION STYLES --- */
 
 /* Prevent text transformation to lowercase in sidebar */
@@ -629,7 +634,11 @@ article,
   }
 }
 
-/* Homepage Quote Section */
+
+/* ========================================= */
+/* HOMEPAGE STYLES */
+/* ========================================= */
+
 .homepage-intro {
   max-width: 900px;
   margin: 60px auto;
@@ -660,15 +669,10 @@ article,
 }
 
 .personal-note {
-  font-size: 1.05em;
-  line-height: 1.7;
-  color: #555;
-  max-width: 700px;
-  margin: 30px auto 40px;
+  padding: 0 !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
   text-align: justify;
-  padding: 20px 30px;
-  background: #f9f9f9;
-  border-radius: 8px;
 }
 
 .hero-image {
@@ -744,14 +748,6 @@ article,
     margin-left: 10px !important;
     margin-right: 10px !important;
     font-size: 1.2em;
-  }
-  
-  /* Personal note */
-  .personal-note {
-    padding: 20px !important;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-    font-size: 0.8em !important;
   }
   
   /* Project cards - this is the main issue */

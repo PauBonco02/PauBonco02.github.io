@@ -12,7 +12,7 @@ SITEURL = "https://pauboncompte.me"
 RELATIVE_URLS = False
 
 
-SITELOGO = "/images/profileimage.JPG"
+SITELOGO = "/images/profileimage.jpg"
 FAVICON = "/images/favicon.ico"
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "monokai"

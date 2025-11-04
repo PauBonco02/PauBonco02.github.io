@@ -14,11 +14,11 @@ RELATIVE_URLS = False
 DELETE_OUTPUT_DIRECTORY = True
 
 
-STATIC_PATHS = ['images', 'static','extra/custom.css','extra/CNAME']
+STATIC_PATHS = ['images', 'static','custom.css','CNAME']
 
 EXTRA_PATH_METADATA = {
-    "extra/custom.css": {"path": "static/custom.css"},
-    "extra/CNAME": {"path": "CNAME"},  # Add this line
+    "custom.css": {"path": "static/custom.css"},
+    "CNAME": {"path": "CNAME"},  # Add this line
 }
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"

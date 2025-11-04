@@ -2,20 +2,33 @@ AUTHOR = 'Pau Boncompte'
 SITENAME = 'Pau Boncompte'
 SITETITLE = 'Pau Boncompte'
 
+'''
 # For development
 SITEURL = "http://localhost:8000"
 RELATIVE_URLS = True
-
 '''
 # For production
 SITEURL = "https://PauBonco02.github.io"
 RELATIVE_URLS = False
-'''
+
 
 SITELOGO = "/images/profileimage.JPG"
 FAVICON = "/images/favicon.ico"
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "monokai"
+USE_FOLDER_AS_CATEGORY = True
+
+ARTICLE_URL = '{category}/{slug}'
+ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
+
+CATEGORY_URL = 'category/{slug}'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}/index.html'
+
+TAG_URL = 'tag/{slug}'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
 
 PATH = "content"
 TIMEZONE = 'Asia/Tokyo'

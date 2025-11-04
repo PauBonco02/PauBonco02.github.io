@@ -5,4 +5,4 @@ Slug: bci-walk
 Date: 1/1/2025
 Summary: An EEG-Based Brain-Computer Interface (BCI) for walking and turning intention decoding in a VR environment.
 
-Diablo
+This article is empty.

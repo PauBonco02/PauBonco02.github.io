@@ -628,3 +628,169 @@ article,
     display: block;
   }
 }
+
+/* Homepage Quote Section */
+.homepage-intro {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.quote-section {
+  text-align: center;
+}
+
+.quote-section blockquote {
+  font-size: 1.4em;
+  font-style: italic;
+  color: #444;
+  border-left: 4px solid #667eea;
+  padding-left: 30px;
+  margin: 40px auto;
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+.quote-section blockquote footer {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 15px;
+  font-style: normal;
+  text-align: right;
+}
+
+.personal-note {
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #555;
+  max-width: 700px;
+  margin: 30px auto 40px;
+  text-align: justify;
+  padding: 20px 30px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.hero-image {
+  margin: 40px 0 60px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Featured Projects */
+.featured-projects {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.featured-projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.project-card h3 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.project-card h3 a:hover {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  /* Main content areas */
+  article .homepage-intro,
+  article .featured-projects {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* Quote section */
+  .quote-section blockquote {
+    padding-left: 20px !important;
+    padding-right: 15px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    font-size: 1.2em;
+  }
+  
+  /* Personal note */
+  .personal-note {
+    padding: 20px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    font-size: 0.8em !important;
+  }
+  
+  /* Project cards - this is the main issue */
+  .project-card {
+    padding: 20px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Project grid */
+  .project-grid {
+    gap: 20px;
+    padding: 0 !important;
+  }
+  
+  /* Project card title and paragraph */
+  .project-card h3,
+  .project-card p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  article .homepage-intro,
+  article .featured-projects {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .project-card {
+    padding: 15px !important;
+  }
+  
+  .quote-section blockquote {
+    font-size: 1.1em;
+    padding: 15px 10px 15px 15px !important;
+  }
+}

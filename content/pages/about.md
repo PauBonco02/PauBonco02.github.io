@@ -5,7 +5,9 @@ Summary: Learn more about me
 order: 1
 
 
-Hi! I'm **Pau Boncompte Carré**, a Biomedical Engineer currently pursuing a **Master’s in AI at [Institute of Science Tokyo](https://www.isct.ac.jp/en)**. I am passionate about **Brain-Computer Interfaces, biosignal processing, and AI/Data Science applications in Healthcare**.
+Hi! I'm **Pau Boncompte Carré**, a Biomedical Engineer from Barcelona currently pursuing a **Master’s in AI at [Institute of Science Tokyo](https://www.isct.ac.jp/en)**. I am passionate about **Brain-Computer Interfaces, biosignal processing, and AI/Data Science applications in Healthcare**.
+
+In my free time, I'm usually reading, at the gym, or learning languages (or at least trying to!).
 
 ---
 
@@ -38,10 +40,10 @@ Hi! I'm **Pau Boncompte Carré**, a Biomedical Engineer currently pursuing a **M
 - **Data Science / AI:** Machine Learning, Deep Learning, Signal Processing  
 - **Miscellaneous:** EEG Recording, Local Field Potential (LFP) Processing, VR Environment Design
 - **Tools:** PyTorch, TensorFlow, NumPy, Pandas, Scikit-learn
-- **Languages:** Catalan and Spanish (Native), English (fluent), Japanese (Business-level), and French (intermediate)
+- **Languages:** Catalan and Spanish (Native), English (Fluent), Japanese (Business-level), French (B1) and German (Beginner).
 
 ---
 
 ## About this Website
 
-This website has been created with Pelican, a static site generator powered by Python. The theme used is **[Flex](https://github.com/alexandrevicenzi/Flex)** by Alexandre Vicenzi.
+This website has been created with Pelican, a static site generator powered by Python. The theme used is **[Flex](https://github.com/alexandrevicenzi/Flex)** by Alexandre Vicenzi, with a few additional scripts I added to enable grid-based image visualization and a lightbox feature. You can check out the source code on my **[GitHub](https://github.com/PauBonco02/PauBonco02.github.io)**.

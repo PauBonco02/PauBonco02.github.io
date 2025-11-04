@@ -1,7 +1,7 @@
 # deploy.ps1 - Deploy Pelican site to GitHub Pages
 
-Write-Host "Regenerating site..." -ForegroundColor Green
-pelican content
+Write-Host "Regenerating site with production settings..." -ForegroundColor Green
+pelican content -s publishconf.py
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Deploying to gh-pages..." -ForegroundColor Green

@@ -11,8 +11,8 @@ from pelicanconf import *
 SITEURL = 'https://pauboncompte.me'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = "feeds/all.atom.xml"
-CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
+DELETE_OUTPUT_DIRECTORY = True
+
 
 STATIC_PATHS = ['images', 'static','extra/custom.css','extra/CNAME']
 
@@ -21,7 +21,8 @@ EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},  # Add this line
 }
 
-DELETE_OUTPUT_DIRECTORY = True
+FEED_ALL_ATOM = "feeds/all.atom.xml"
+CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 # Following items are often useful when publishing
 

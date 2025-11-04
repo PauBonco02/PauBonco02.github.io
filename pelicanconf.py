@@ -54,12 +54,13 @@ SOCIAL = (
     ('envelope', 'mailto:pauboncompte02@gmail.com'),
 )
 
-STATIC_PATHS = ['images', 'static','extra/custom.css']
+STATIC_PATHS = ['images', 'static','extra/custom.css','extra/CNAME']
 
 USE_LESS = True
 
 EXTRA_PATH_METADATA = {
     "extra/custom.css": {"path": "static/custom.css"},
+    "extra/CNAME": {"path": "CNAME"},
 }
 
 CUSTOM_CSS = "static/custom.css"

@@ -8,7 +8,7 @@ SITEURL = "http://localhost:8000"
 RELATIVE_URLS = True
 '''
 # For production
-SITEURL = "https://PauBonco02.github.io"
+SITEURL = "https://pauboncompte.me"
 RELATIVE_URLS = False
 
 

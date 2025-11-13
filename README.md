@@ -1,5 +1,5 @@
 # PauBonco02.github.io
-This is the code for my [personal website](www.pauboncompte.me).
+This is the code for my [personal website](https://pauboncompte.me/).
 
 It has been developed with [Pelican](https://getpelican.com/) and it is based on the theme [Flex](https://github.com/alexandrevicenzi/Flex) by Alexandre Vicenzi.
 On top of that, I added some scripts to enable grid-based image visualization and a lightbox feature among others.

@@ -13,7 +13,7 @@
     {{ page.content }}
   </div>
   
-  {% for article in articles | sort(attribute='title', reverse=False) %}
+  {% for article in articles | sort(attribute='date', reverse=True) %}
     {% if article.category.name == 'projects' %}
     <div class="project-entry">
       {% if article.cover %}
@@ -21,7 +21,6 @@
         <a href="{{ SITEURL }}/{{ article.url }}">
           <img src="{{ SITEURL }}/{{ article.cover }}" alt="{{ article.title }}" style="width: 200px; height: 200px; object-fit: cover;">
         </a>
-        <a class="btn" href="{{ SITEURL }}/{{ article.url }}" style="text-align: center;">Continue reading</a>
       </div>
       {% endif %}
       
@@ -43,10 +42,11 @@
             {{ article.summary }}
             {% endif %}
         </div>
-        <!-- Mobile-only Continue reading button -->
+        {# Mobile-only Continue reading button
         <div class="mobile-continue-btn">
           <a class="btn" href="{{ SITEURL }}/{{ article.url }}">Continue reading</a>
         </div>
+        #}
       </div>
     </div>
     {% endif %}

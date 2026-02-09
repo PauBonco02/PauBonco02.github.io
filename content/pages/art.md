@@ -1,7 +1,7 @@
 Title: Art
 Date: 2025-01-01
 Slug: art
-Order: 3
+Order: 4
 
 Here is a collection of my artwork. Click on any image to zoom it and see more details.
 

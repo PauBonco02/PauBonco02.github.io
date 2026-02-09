@@ -67,7 +67,10 @@ DEFAULT_PAGINATION = 10
 
 # Plugin settings
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['photos']
+PLUGINS = [
+    'photos',
+    'pelican.plugins.youtube'
+]
 
 # --- pelican-photos settings ---
 PHOTO_LIBRARY = "images/gallery" # Main folder for all galleries

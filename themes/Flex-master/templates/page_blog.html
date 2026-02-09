@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %} &ndash; {{ page.title }}{% endblock %}
+
+{% block content %}
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  
+  <!-- intro text from the page content -->
+  <div>
+    {{ page.content }}
+  </div>
+  
+  {% for article in articles | sort(attribute='date', reverse=True) %}
+    {% if article.category.name == 'blog' %}
+    <div class="blog-entry">
+      
+      <div class="blog-content">
+        <header>
+          <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+          <p>
+            <!--Posted on {{ article.locale_date }} -->
+            {% if article.tags %}
+                &#8226; Tagged with
+                {% for tag in article.tags %}
+                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+                {% endfor %}
+            {% endif %}
+          </p>
+        </header>
+        <div>
+            {% if article.summary %}
+            {{ article.summary }}
+            {% endif %}
+        </div>
+        {# Mobile-only Continue reading button
+        <div class="mobile-continue-btn">
+          <a class="btn" href="{{ SITEURL }}/{{ article.url }}">Continue reading</a>
+        </div>
+        #}
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</article>
+{% endblock %}

@@ -612,6 +612,12 @@ article,
   flex: 1;
 }
 
+.blog-entry {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
 /* Hide mobile continue button on desktop */
 .mobile-continue-btn {
   display: none;

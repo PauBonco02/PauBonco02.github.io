@@ -16,7 +16,7 @@ In my free time, I'm usually reading, at the gym, or learning languages (or at l
 ### Graduate Research Student
 **[Yoshimura Lab, Institute of Science Tokyo](https://www.nicep.first.iir.titech.ac.jp/ylab/)** | 2024–Present
 
-- Researching EEG signal decoding for walking and turning intentions in VR environments.
+- Researching EEG signal decoding for forward moving and turning intentions in VR environments.
 - Implementing machine learning pipelines for real-time intention detection.
 
 ### Biomedical Engineering Intern
@@ -36,7 +36,7 @@ In my free time, I'm usually reading, at the gym, or learning languages (or at l
 
 ## Skills
 
-- **Programming:** Python, MATLAB, C#, C++ (basic), Java (basic)
+- **Programming:** Python, MATLAB, C#, SQL (intermediate), Java (basic)
 - **Data Science / AI:** Machine Learning, Deep Learning, Signal Processing  
 - **Miscellaneous:** EEG Recording, Local Field Potential (LFP) Processing, VR Environment Design
 - **Tools:** PyTorch, TensorFlow, NumPy, Pandas, Scikit-learn

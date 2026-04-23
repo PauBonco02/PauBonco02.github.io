@@ -5,6 +5,8 @@ Slug: bci-walk
 Date: 1/1/2026
 Summary: I designed a EEG-Based Brain-Computer Interface (BCI) for forward movement and turning intention decoding in a VR environment and compared the neural signatures between Motor Imagery (MI) with and without Action Observation (AO).
 
+This is a summary of my **Master's thesis**, conducted at the Institute of Science Tokyo. The research was presented at the 14th IEEE International Winter Conference on Brain-Computer Interface (BCI2026) in South Korea, and the corresponding paper, [*EEG-based Forward Movement and Turning MI Classification with and without Action Observation in Virtual Reality*](https://ieeexplore.ieee.org/document/11435097), is published **by IEEE**.
+
 ## What are MI-BCIs?
 
 Motor Imagery (MI) is defined as the mental simulation of a physical movement without actual execution. Imagine you are equipped with an EEG headset and we analyze the signals during some action, e.g. arm flexion. You would most likely show activation in the motor cortex region related to that movement. However, if instead of movement we captured your mental rehearsal of that action (MI of that action), the same regions would show activations. That opens a huge window of possibilities, since users with motor impairments but intact central nervous system (e.g. patients with ALS) can employ MI in Brain-Computer Interfaces to control devices directly with their brain signals.

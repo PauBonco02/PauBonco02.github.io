@@ -1,7 +1,7 @@
 Title: About
 Slug: about
 Author: Pau Boncompte
-Summary: Learn more about me
+Summary: About Me
 order: 1
 
 
@@ -41,6 +41,12 @@ In my free time, I'm usually reading, at the gym, or learning languages (or at l
 - **Miscellaneous:** EEG Recording, Local Field Potential (LFP) Processing, VR Environment Design
 - **Tools:** PyTorch, TensorFlow, NumPy, Pandas, Scikit-learn
 - **Languages:** Catalan and Spanish (Native), English (Fluent), Japanese (Business-level), French (B1) and German (Beginner).
+
+---
+
+## Publications
+
+- Boncompte-Carre, P., Martinez-Tejada, L. A., & Yoshimura, N. (2026). ***EEG-based forward movement and turning MI classification with and without action observation in virtual reality***. 2026 14th International Conference on Brain-Computer Interface (BCI), 1–6. DOI: [10.1109/BCI69045.2026.11435097](https://ieeexplore.ieee.org/document/11435097).
 
 ---
 

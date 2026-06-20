@@ -5,22 +5,27 @@ Summary: About Me
 order: 1
 
 
-Hi! I'm **Pau Boncompte Carré**, a Biomedical Engineer from Barcelona currently pursuing a **Master’s in AI at [Institute of Science Tokyo](https://www.isct.ac.jp/en)**. I am passionate about **Brain-Computer Interfaces, biosignal processing, and AI/Data Science applications in Healthcare**.
+Hi! I'm **Pau Boncompte Carré**, a Biomedical Engineer from Barcelona currently pursuing a **Master’s in AI at [Institute of Science Tokyo](https://www.isct.ac.jp/en)**. I work with medical imaging, neural data, and clinical datasets, building AI-driven tools that support data-driven decision-making and improve diagnostic and research workflows.
 
-In my free time, I'm usually reading, at the gym, or learning languages (or at least trying to!).
+In my free time, I'm usually reading, playing videogames, or learning languages (or at least trying to!).
 
 ---
 
 ## Experience
 
+### AI Intern
+**[MI-6株式会社](https://mi-6.co.jp/)** | Jun. 2026 – Present
+
+- Developing an AI pipeline for dental condition classification from intraoral images. The conditions detected span from caries to fluorosis and MIH.
+
 ### Graduate Research Student
 **[Yoshimura Lab, Institute of Science Tokyo](https://www.nicep.first.iir.titech.ac.jp/ylab/)** | 2024–Present
 
-- Researching EEG signal decoding for forward moving and turning intentions in VR environments.
-- Implementing machine learning pipelines for real-time intention detection.
+- Designed a VR environment in Unity 6 with real-time LSL-synchronized 64-channel EEG acquisition for locomotion and turning motor imagery.
+- Developed a hierarchical deep learning ensemble (EEGNet + ShallowConvNet in Python/TensorFlow), achieving 79.8% binary and 62.9% four-class accuracy for locomotion decoding.
 
 ### Biomedical Engineering Intern
-**[SIMBIOSys, BCN Medtech](https://www.upf.edu/web/simbiosys)** | 2023–2024
+**[SIMBIOSys, BCN Medtech](https://www.upf.edu/web/simbiosys)** | Nov. 2023 – Aug. 2024
 
 - Analyzed MRI neuroimaging data from Hospital Clínic de Barcelona comparing cortical and cerebrovascular structure between healthy controls and patients born with intrauterine growth restriction (IUGR)
 - Performed comparative analysis to identify structural differences in brain morphology and vascular architecture associated with IUGR

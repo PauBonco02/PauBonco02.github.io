@@ -14,15 +14,20 @@ In my free time, I'm usually reading, playing videogames, or learning languages 
 ## Experience
 
 ### AI Intern
-**[MI-6株式会社](https://mi-6.co.jp/)** | Jun. 2026 – Present
+**[Siemens Healthineers Japan](https://www.siemens-healthineers.com/)** | Aug. 2026 – Present
 
-- Developing an AI pipeline for dental condition classification from intraoral images. The conditions detected span from caries to fluorosis and MIH.
+- Developing an AI agent for application architecture design. 
+
+### Data Science Intern
+**[MI-6株式会社](https://mi-6.co.jp/)** | Jul. 2026 – Present
+
+- Developing an CV pipeline for dental condition classification from intraoral images. The conditions detected span from caries to fluorosis and MIH.
 
 ### Graduate Research Student
 **[Yoshimura Lab, Institute of Science Tokyo](https://www.nicep.first.iir.titech.ac.jp/ylab/)** | 2024–Present
 
 - Designed a VR environment in Unity 6 with real-time LSL-synchronized 64-channel EEG acquisition for locomotion and turning motor imagery.
-- Developed a hierarchical deep learning ensemble (EEGNet + ShallowConvNet in Python/TensorFlow), achieving 79.8% binary and 62.9% four-class accuracy for locomotion decoding.
+- Developed a hierarchical deep learning ensemble (EEGNet + ShallowConvNet in Python/TensorFlow), achieving 87% binary and 63% four-class accuracy for locomotion decoding.
 
 ### Biomedical Engineering Intern
 **[SIMBIOSys, BCN Medtech](https://www.upf.edu/web/simbiosys)** | Nov. 2023 – Aug. 2024
@@ -41,11 +46,10 @@ In my free time, I'm usually reading, playing videogames, or learning languages 
 
 ## Skills
 
-- **Programming:** Python, MATLAB, C#, SQL (intermediate), Java (basic)
-- **Data Science / AI:** Machine Learning, Deep Learning, Signal Processing  
-- **Miscellaneous:** EEG Recording, Local Field Potential (LFP) Processing, VR Environment Design
-- **Tools:** PyTorch, TensorFlow, NumPy, Pandas, Scikit-learn
-- **Languages:** Catalan and Spanish (Native), English (Fluent), Japanese (Business-level), French (B1) and German (Beginner).
+- **Programming:** Python, MATLAB, C#, SQL, Java, Bash, Lua
+- **Frameworks & Tools:** Pandas, PyTorch, TensorFlow, Scikit-learn, NumPy, Matplotlib, pydicom, MATLAB, FreeSurfer, Docker, Git, PostgreSQL, Linux, AWS, HPC environments  
+- **ML Engineering & MLOps:** ML pipelines, hyperparameter optimization, data augmentation, HPC/SLURM job scheduling, AWS, HPC environments
+- **Languages:** Catalan and Spanish (Native), English (Fluent), Japanese (N2, Business-level), French (B1) and German (Beginner).
 
 ---
 
@@ -57,4 +61,4 @@ In my free time, I'm usually reading, playing videogames, or learning languages 
 
 ## About this Website
 
-This website has been created with Pelican, a static site generator powered by Python. The theme used is **[Flex](https://github.com/alexandrevicenzi/Flex)** by Alexandre Vicenzi, with a few additional scripts I added to enable grid-based image visualization and a lightbox feature. You can check out the source code on my **[GitHub](https://github.com/PauBonco02/PauBonco02.github.io)**.
+This website has been created with Pelican, a static site generator powered by Python. The theme used is **[Flex](https://github.com/alexandrevicenzi/Flex)** by Alexandre Vicenzi, with a few additional scripts I added to enable grid-based image visualization, lightboxes, and mobile-adapted UI. You can check out the source code on my **[GitHub](https://github.com/PauBonco02/PauBonco02.github.io)**.

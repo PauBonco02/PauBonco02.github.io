@@ -14,7 +14,6 @@ if ($LASTEXITCODE -eq 0) {
         git push origin main
         
         Write-Host "Deployment complete!" -ForegroundColor Green
-        Write-Host "Your site will be live at https://pauboncompte.me in 1-2 minutes" -ForegroundColor Cyan
     } else {
         Write-Host "Error deploying to gh-pages" -ForegroundColor Red
     }

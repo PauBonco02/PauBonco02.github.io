@@ -1,7 +1,7 @@
 Title: Why I Love Turgenev (and Why Russian Realism Is So Crushing)
 Category: blog
 Slug: turgenev
-Date: 9/2/2026
+Date: 2/9/2026
 Summary: Back in 2020, I picked up Fathers and Sons expecting some edgy nihilistic quotes to live by, but I ended up falling down a Turgenev rabbit hole that was way more intense than I expected. It wasn't just the ideology; it was the psychology of his characters and that specific, soul-crushing irony that defines his stories. In this post, I want to dissect what exactly fascinated me about him and why the "tragedy of attrition" in Russian realism hits so much harder than a typical dramatic ending.
 
 In 2020, I decided to read Ivan Turgenev’s 1862 novel, *Fathers and Sons*. I was told it was one of the first truly modern Russian novels, reflecting the radical social, political, and technological shifts of the Tsarist era through a generational clash of values. It famously foreshadowed the societal shifts that would eventually culminate in the 1917 Revolution. At the time, I was full of uncertainty about the future and what ideals to stand for, so I don't blame my past self for being attracted to the charismatic nihilism embodied by Yevgeny Bazarov, a medical student who proudly states he does not believe in anything. I wasn't sure if it was the character himself, the witty arguments between him and his friend’s romantic, principled uncle Pavel Petrovich, or the frightening number of parallels between the 1800s and the present, but the novel fascinated me.

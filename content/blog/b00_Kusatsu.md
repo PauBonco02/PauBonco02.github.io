@@ -1,7 +1,7 @@
 Title: My Trip to Kusatsu, Gunma
 Category: blog
 Slug: kusatsu
-Date: 23/12/2025
+Date: 12/23/2025
 Summary: In December 2024, I went on a trip to Kusatsu Onsen in Gunma with some friends. In this blog, I’d like to share a summary of my experience and the reflections I took away from it.
 
 It was December 2024, less than three months after I had arrived in Japan for my master’s studies. Up to that point, my lifestyle had mainly consisted of shuttling between my tiny, prison-like dorm room and the Ookayama campus for classes and library sessions, with weekends reserved for wandering around unexplored parts of Tokyo.
